@@ -1,0 +1,59 @@
+<view class='mask'> 
+<view class="bg" style="opacity:{{0.1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+</view>
+
+<van-notify id="van-notify" />
+<view class="signup-container">
+  <view class="icon-box">
+    <van-icon class='back-icon' bindtap='backClick' size='60rpx' bindtap='backClick' color="white" name='arrow-left' />
+  </view>
+  <view class='question-box'>
+    <text class='q3'>Lastly,an account</text>
+    <van-cell-group class='username'>
+      <van-field
+        value="{{ value }}"
+        placeholder="Username"
+        placeholder-style="font-family:Montserrat"
+        left-icon='user-o'
+        border="{{ false }}"
+        bind:change="onChangeUsername"
+      />
+    </van-cell-group>
+    <van-cell-group class='email'>
+      <van-field
+        value="{{ value }}"
+        placeholder="Email"
+        left-icon='ecard-pay'
+        placeholder-style="font-family:Montserrat"
+        border="{{ false }}"
+        bind:change="onChangeEmail"
+      />
+    </van-cell-group>
+    <van-cell-group class='phone'>
+      <van-field
+        value="{{ value }}"
+        placeholder="Phone"
+        placeholder-style="font-family:Montserrat"
+        left-icon='phone-o'
+        border="{{ false }}"
+        type="number"
+        bind:change="onChangePhone"
+      />
+    </van-cell-group>
+    <van-cell-group class='password'>
+      <van-field
+        value="{{ value }}"
+        type="password"
+        placeholder="Password"
+        placeholder-style="font-family:Montserrat"
+        left-icon='closed-eye'
+        border="{{ false }}"
+        bind:change="onChangePwd"
+        adjust-position = "{{true}}"
+      />
+    </van-cell-group>
+    <text class='done' bindtap='signup'>Done</text>
+  </view>
+</view>

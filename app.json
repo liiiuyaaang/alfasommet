@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/questionaire/questionaire",
+    "pages/q4/q4",
+    "pages/q3/q3",
+    "pages/q2/q2",
+    "pages/recommendation/recommendation",
+    "pages/user/user",
+    "pages/signup/signup",
+    "pages/signupb/signupb",
+    "pages/signupa/signupa"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "Alfasommet",
+    "navigationBarTextStyle":"white",
+    "navigationStyle":"custom"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-icon": "../miniprogram_npm/vant-weapp/icon/index",
+    "van-field": "../miniprogram_npm/vant-weapp/field/index",
+    "van-picker": "../miniprogram_npm/vant-weapp/picker/index",
+    "van-popup": "../miniprogram_npm/vant-weapp/popup/index",
+    "wux-radio-group": "../miniprogram_npm/wux-weapp/radio-group/index",
+    "wux-radio": "../miniprogram_npm/wux-weapp/radio/index"
+  },
+  "disableScroll": true
+}

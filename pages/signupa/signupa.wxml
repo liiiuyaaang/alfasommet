@@ -1,0 +1,35 @@
+<view class='mask'> 
+<view class="bg" style="opacity:{{0.1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+</view>
+
+<view class="signup-container">
+  <view class="icon-box">
+    <van-icon class='back-icon' bindtap='backClick' size='60rpx' bindtap='backClick' color="white" name='arrow-left' />
+  </view>
+  <view class='question-box'>
+    <text class='q2'>What is your career</text>
+    <van-cell-group class='company'>
+      <van-field
+        value="{{ value }}"
+        placeholder="Company"
+        placeholder-style="font-family:Montserrat"
+        left-icon='hotel-o'
+        border="{{ false }}"
+        bind:change="onChangeCompany"
+      />
+    </van-cell-group>
+    <van-cell-group class='position'>
+      <van-field
+        value="{{ value }}"
+        placeholder="Position"
+        placeholder-style="font-family:Montserrat"
+        left-icon='user-o'
+        border="{{ false }}"
+        bind:change="onChangePosition"
+      />
+    </van-cell-group>
+    <text class='next' bindtap='nextClick'>Next</text>
+  </view>
+</view>

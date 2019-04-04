@@ -1,0 +1,5 @@
+<van-notify id="van-notify" />
+<view class='index-container'>
+  <input placeholder="Conference code" placeholder-class='ph' type='text' bindinput='codeInput' auto-focus />
+  <button plain='true' bindtap='enterBtnClick'>Enter</button>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-icon": "../miniprogram_npm/vant-weapp/icon/index",
+    "item-group": "../components/item-group/item-group",
+    "van-dialog": "../miniprogram_npm/vant-weapp/dialog/index"
+  },
+  "enablePullDownRefresh": false
+}

@@ -1,0 +1,38 @@
+page{
+  background-image: url("https://i.loli.net/2019/03/10/5c847549f1b9c.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ph{
+  text-align: center;
+  font-family: 'Montserrat'
+}
+
+.index-container input{
+  border-bottom:solid;
+  border-bottom-color:white;
+  border-bottom-width: 4rpx;
+  width: 50%;
+  margin-top: 550rpx;
+  color: white;
+}
+
+.index-container button{
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  margin-top:100rpx; 
+  width: 30%;
+  border-color: white;
+  border-radius: 0;
+  border-width: 4rpx;
+}
+

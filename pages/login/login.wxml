@@ -1,0 +1,32 @@
+<van-notify id="van-notify" />
+<view class='mask'> 
+<view class="bg" style="opacity:{{0.1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+</view>
+
+<view class="login-container">
+  <!-- <view class='bg-box'>
+    <image class='bgImage' mode='widthFix' src='/image/talk.jpg'></image>
+  </view> -->
+  <view class="item">
+    <view class="login-item">
+      <view><input bindinput="usernameInput" placeholder='Username' placeholder-class='ph' /></view>
+    </view>
+    <view class="login-item">
+      <view class="login-pwd">
+        <input  password="true" placeholder='Password' placeholder-class='ph' bindinput="passwordInput"/>          
+      </view>
+    </view>
+    <view class='btn'>
+      <view class='login-btn'>
+        <button plain='true' catchtap='login' >Login</button>
+      </view>
+    </view>
+    <view class='btn'>
+      <view class='signup-btn'>
+        <button plain='true' bindtap='signupBtnTap' >Signup</button>
+      </view>
+    </view>
+  </view>
+</view>

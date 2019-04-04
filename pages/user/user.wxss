@@ -1,0 +1,227 @@
+/* pages/user/user.wxss */
+
+.nav{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid lightgray;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgb(240, 240, 240);
+}
+
+.back-icon {
+  margin-left:4%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  width: 100%;
+}
+
+.favicon {
+  display: flex;
+  height: 300rpx;
+  width: 100%;
+  flex:none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.favicon-img {
+  height: 280rpx;
+  width: 280rpx;
+  border-radius: 140rpx;
+  flex: none;
+}
+
+.favicon-name {
+  font-size: 40rpx; 
+  text-align: center;
+  font-weight: bold;
+  font-family:'Montserrat';
+}
+
+.questionaire-box {
+  border-bottom: lightgray solid 1rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.questionaire{
+  margin-top:30rpx;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  width: 80%;
+  flex-wrap: wrap;
+  word-break: break-all;
+  margin-bottom:30rpx; 
+  font-size: 35rpx;
+  color: rgb(162, 162, 162);
+  font-family:'Montserrat';
+}
+
+.education-box {
+  display: flex;
+  justify-content: center;
+}
+
+.education {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  width: 83%;
+  justify-content: center;
+  
+}
+
+.school {
+  display: flex;
+  flex-direction: column;
+}
+
+.employed {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.bottom button {
+  border: 0;
+  color: rgb(138, 121, 197);
+  font-size: 56rpx;
+  
+}
+
+.bottom-text {
+  color: rgb(199, 199, 199);
+  font-size: 20rpx;
+  font-family:'Montserrat';
+}
+
+.invitation-status {
+  margin-top: 45rpx; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.picker {
+  font-size: 50rpx;
+  color: rgb(138, 121, 197);
+  font-family:'Montserrat';
+}
+
+.invitation-button button {
+  font-size: 50rpx;
+  color: rgb(138, 121, 197);
+  border: 0;
+  font-family:'Montserrat';
+}
+
+.career-box {
+  display: flex;
+  width:80%
+}
+
+.icon-box {
+  width: 20%;
+  display: flex;
+  flex-shrink:0; 
+}
+
+.q-box {
+  flex-shrink: 0;
+  display: flex;
+  width:100%;
+}
+
+.sent-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.selection {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  color: rgb(138, 121, 197);
+  border: 0;
+  font-family:'Montserrat';
+  width: 70%;
+}
+
+.received {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(138, 121, 197);
+  border: 0;
+  font-family:'Montserrat';
+}
+
+.received-text {
+  color: rgb(138, 121, 197);
+  border: 0;
+  font-family:'Montserrat';
+  font-size: 50rpx;
+}
+
+.bottom-line {
+  color: rgb(199, 199, 199);
+  font-size: 20rpx;
+  font-family:'Montserrat';
+}
+
+.bottom-icons-box {
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bottom-icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 50rpx;
+  color: rgb(138, 121, 197);
+  font-family:'Montserrat';
+}
+
+.bottom-box {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

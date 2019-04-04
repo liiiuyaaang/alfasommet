@@ -1,0 +1,27 @@
+
+
+<view class='mask'> 
+<view class="bg" style="opacity:{{0.1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+</view>
+
+<view class='questionaire-box'>
+  <view class="icon-box">
+    <van-icon class='back-icon' opacity='0' bindtap='backClick' size='60rpx' bindtap='backClick' color="white" name='arrow-left' />
+  </view>
+  <view class='question-box'>
+    <view class='pageTitle-box'>
+      <text class='q1'>What is your main purpose by coming here?</text>
+    </view>
+    <view class='options'>
+        <picker class='picker-box' bindchange='bindPickerChange' value="{{index}}" range="{{array}}">
+          <view class='pickers'>
+            {{array[index]}}
+          </view>
+        </picker>
+    </view>
+    <van-icon class='arrow-icon' bindtap='next' name="arrow" color='white' size='140rpx'/>
+  </view>
+</view>
+    

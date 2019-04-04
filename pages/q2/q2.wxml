@@ -1,0 +1,23 @@
+
+
+<view class='mask'> 
+<view class="bg" style="opacity:{{0.1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+</view>
+
+<view class='questionaire-box'>
+  <view class="icon-box">
+    <van-icon class='back-icon' bindtap='backClick' size='60rpx' bindtap='backClick' color="white" name='arrow-left' />
+  </view>
+  <view class='question-box'>
+    <view class='pageTitle-box'>
+      <text class='q2'>Can you be more specific with your goal?</text>
+    </view>
+    <view class='answer'>
+      <input placeholder-class='ph' bindinput='answerInput' placeholder='e.g. Connecting with a career mentor in finance to discuss about asset management careers' placeholder-style='font-family:"Montserrat"' ></input>
+    </view>
+    <van-icon class='arrow-icon' bindtap='next' name="arrow" color='white' size='140rpx'/>
+  </view>
+</view>
+    

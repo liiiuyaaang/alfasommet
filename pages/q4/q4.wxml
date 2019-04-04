@@ -1,0 +1,29 @@
+
+
+<view class='mask'> 
+<view class="bg" style="opacity:{{0.1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+</view>
+
+<view class='questionaire-box'>
+  <view class="icon-box">
+    <van-icon class='back-icon' bindtap='backClick' size='60rpx' bindtap='backClick' color="white" name='arrow-left' />
+  </view>
+  <view class='question-box'>
+    <view class='pageTitle-box'>
+      <text class='q4'>One last question! Can you list three different expertise?</text>
+    </view>
+    <view class='answer4'>
+      <input placeholder-class='ph' bindinput='answerInput1' placeholder='e.g. building actuarial models for large insurance projects'></input>
+    </view>
+    <view class='answer5'>
+      <input placeholder-class='ph' bindinput='answerInput2' placeholder='e.g. 5 years experience in video editing and marketing'></input>
+    </view>
+    <view class='answer6'>
+      <input placeholder-class='ph' bindinput='answerInput3' placeholder='e.g. connecting with angel investors and incubators'></input>
+    </view>
+    <van-icon class='arrow-icon' bindtap='next' name="arrow" color='white' size='140rpx'/>
+  </view>
+</view>
+    

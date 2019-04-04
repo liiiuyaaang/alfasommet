@@ -1,0 +1,21 @@
+
+<navigator class='item-group' url="{{itemurl}}" >
+  <view class="favicon">
+    <image src='{{favicon}}'></image>
+    <text class = 'positions'>{{item.position}} at {{item.company}}</text>
+  </view>
+  <view class='questionaire-box'>
+    <view class='questionaire'>
+      <text class='name'>{{item.firstName}} {{item.lastName}}</text>
+      <text class='q1'>{{item.questionaire.questions[0].answer}}</text>
+      <text class='q2'>{{item.questionaire.questions[1].answer}}</text>
+      <text class='q3'>{{item.questionaire.questions[2].answer}}</text>
+      <view class='status' wx:if="{{item.invitation == null}}"></view>
+      <view class='status' wx:elif="{{item.invitation.sender == userId && item.invitation.stat == 0}}">Invite sent</view>
+      <view class='status' wx:elif="{{item.invitation.receiver == userId && item.invitation.stat == 0}}">Received</view>
+      <view class='status' wx:elif="{{item.invitation.stat == 1}}">accepted</view>
+      <view class='status' wx:elif="{{item.invitation.stat == 2}}">rejected</view>
+      <view class='status' wx:elif="{{item.invitation.stat == 3}}">schedule full</view>
+    </view>
+  </view>
+</navigator>

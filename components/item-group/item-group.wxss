@@ -1,0 +1,111 @@
+.item-group {
+  height: 330rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: 1rpx solid lightgray;
+}
+
+.favicon image {
+  height: 170rpx;
+  width: 170rpx;
+  border-radius: 85rpx;
+}
+
+.favicon text {
+  font-size: 26rpx;
+  text-align: center;
+  color: rgb(150, 150, 150);
+  font-family: "Montserrat";
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.favicon {
+  display: flex;
+  flex-shrink:0 ;
+  width: 33%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.questionaire-box {
+  display: flex;
+  padding: 25rpx;
+}
+
+.questionaire {
+  display: flex;
+  flex-basis: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.questionaire text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+}
+
+.q1 {
+  margin-top:5rpx; 
+  font-size: 25rpx;
+  color: rgb(135, 135, 135);
+  font-family: "Montserrat";
+}
+
+.q1 text{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+}
+
+.q2 text{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.q3 text{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.q2 {
+  color: rgb(135, 135, 135);
+  font-size: 25rpx;
+  font-family: "Montserrat";
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.q3 {
+  font-size: 25rpx;
+  color: rgb(135, 135, 135);
+  font-family: "Montserrat";
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.status {
+  margin-top:10rpx;
+  font-size: 24rpx;
+  color: rgb(138, 121, 197);
+  font-family: "Montserrat";
+}

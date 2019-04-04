@@ -1,0 +1,23 @@
+
+
+<view class='mask'> 
+<view class="bg" style="opacity:{{0.1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+</view>
+
+<view class='questionaire-box'>
+  <view class="icon-box">
+    <van-icon class='back-icon' bindtap='backClick' size='60rpx' bindtap='backClick' color="white" name='arrow-left' />
+  </view>
+  <view class='question-box'>
+    <view class='pageTitle-box'>
+      <text class='q3'>What field(s) do you see yourself in?</text>
+    </view>
+    <view class='answer'>
+      <input placeholder-class='ph' bindinput='answerInput' placeholder='Could be finance, engineering, accounting, science, etc..'></input>
+    </view>
+    <van-icon class='arrow-icon' bindtap='next' name="arrow" color='white' size='140rpx'/>
+  </view>
+</view>
+    

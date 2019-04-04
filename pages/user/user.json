@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-icon": "../miniprogram_npm/vant-weapp/icon/index",
+    "item-group": "../components/item-group/item-group",
+    "van-notify": "../miniprogram_npm/vant-weapp/notify/index"
+  }
+}

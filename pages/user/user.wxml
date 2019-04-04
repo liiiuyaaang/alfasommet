@@ -1,0 +1,157 @@
+<!--pages/user/user.wxml-->
+<wxs module="common">
+
+var substring = function (str,start,stop) {
+
+str = str.substring(start,stop)
+
+return str;
+
+}
+
+module.exports.substring = substring;
+
+</wxs>
+
+<van-notify id="van-notify" />
+<view class='container'>
+  <view class='nav' style='height:{{navH}}px'>
+    <van-icon class='back-icon' bindtap='backClick' size='60rpx' bindtap='backClick' color="black" name='arrow-left' />
+  </view>
+  <view class='content'>
+    <view class='main-content'>
+      <view class='favicon'>
+        <view class='favicon-box'>
+          <image class='favicon-img' src='/image/favicon/{{userdata.gender}}/{{common.substring(userdata.toUserId,23,24)}}.png'></image>
+          <view class='favicon-name'>
+            <text>{{userdata.firstname}} {{userdata.lastname}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="questionaire-box">
+        <view class='questionaire'>
+        <view class='career-box'>
+          <view class='icon-box'>
+            <van-icon name='idcard' size='60rpx'/>
+          </view>
+          <view class='q-box'>
+            <text class='career'>{{userdata.position}} at {{userdata.company}}</text>
+          </view>
+        </view>
+        <view class='career-box'>
+          <view class='icon-box'>
+            <van-icon name='certificate' size='60rpx'/>
+          </view>
+          <view class='q-box'>
+            <text class='career'>{{userdata.q1}}</text>
+          </view>
+        </view>
+        <view class='career-box'>
+          <view class='icon-box'>
+            <van-icon name='certificate' size='60rpx'/>
+          </view>
+          <view class='q-box'>
+            <text class='career'>{{userdata.q2}}</text>
+          </view>
+        </view>
+        <view class='career-box'>
+          <view class='icon-box'>
+            <van-icon name='certificate' size='60rpx'/>
+          </view>
+          <view class='q-box'>
+            <text class='career'>{{userdata.q3}}</text>
+          </view>
+        </view>        
+        </view>
+      </view>
+      <view class='education-box'>
+        <view class='education'>
+          <view class='school'>
+            <text style='color:rgb(64, 62, 121);font-size:35rpx;font-weight:bold;font-family:"Montserrat"'>Specific goal for attending this conference</text>
+            <text class='school-name' style='font-size:28rpx;font-family:"Montserrat"'>{{userdata.q4}}</text>
+          </view>
+          <view class='employed'>
+            <text style='color:rgb(64, 62, 121);font-size:35rpx;font-weight:bold;font-family:"Montserrat"'>What field(s) do you see yourself in?</text>
+            <text class='employed-status' style='font-size:28rpx;font-family:"Montserrat"'>{{userdata.q5}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='invitation-status'>
+        <view class='invitation-text' wx:if="{{ statCode == 2 }}">
+          <view>
+            <view>
+              <text>Invitation rejected</text>
+            </view>
+            <view class='bottom-box'>
+              <text class='bottom-line'>We will notify the other person</text>
+            </view>
+          </view>
+        </view>
+        <view class='invitation-text' wx:elif="{{ statCode == 1 }}">
+          <view>
+            <view>
+              <text>Chat scheduled</text>
+            </view>
+            <view class='bottom-icons-box'>
+              <view class='bottom-icon-box'>
+                <view class='bottom-icon'>
+                  <van-icon name='clock-o' size='50rpx'/>
+                </view>
+                <view class='bottom-show'>
+                  <text style='font-size:25rpx'>15:20</text>
+                </view>
+              </view>
+              <view class='bottom-icon-box'>
+                <view class='bottom-icon'>
+                  <van-icon name='location-o' size='50rpx'/>
+                </view>
+                <view class='bottom-show'>
+                  <text style='font-size:25rpx'>near {{userdata.address}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='invitation-text' wx:elif="{{ statCode == 3 }}">Schedule full</view>
+        <view class='invitation-text' wx:elif="{{ statCode == 4 }}">
+          <view class='sent-icon'>
+            <van-icon name='upgrade' size='80rpx'/>
+          </view>
+          <view class='sent-box'>
+          <view>Invitation sent</view>
+            <view class='bottom-box'>
+              <text class='bottom-line'>We will notify the other person</text>
+            </view>
+          </view>
+        </view>
+        <view class='invitation-button' wx:elif="{{ statCode == '' }}">
+          <button plain='true' bindtap='chatClick'>Let's chat</button>
+        </view>
+        <view class='invitation-text' wx:elif="{{ statCode == 0 && receiverId == toUserId}}">
+          <view class='sent-icon'>
+            <van-icon name='upgrade' size='80rpx'/>
+          </view>
+          <view class='sent-text'>
+            Invitation sent
+          </view>
+        </view>
+        <view wx:elif="{{ statCode == 0 && receiverId == userId}}">
+          <!-- <picker bindchange='bindPickerChange' value="{{index}}" range="{{array}}">
+            <view class='picker'>
+              {{array[index]}}
+            </view>
+          </picker> -->
+          <view class='received'>
+            <view class='received-text'>
+              Invitation received
+            </view>
+            <view class='selection'>
+              <text bindtap='deny' style='color:rgb(199, 199, 199)'>Deny</text>
+              <text bindtap='accept'>Accept</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

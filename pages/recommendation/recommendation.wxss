@@ -1,0 +1,95 @@
+/* pages/list/list.wxss */
+.nav{
+  display: flex;
+  position: fixed;
+  border-bottom: 1rpx solid lightgray;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgb(240, 240, 240);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logout-box {
+  z-index: 20
+}
+
+.logout {
+  flex: center;
+  opacity: 0;
+}
+
+.invite {
+  flex: left;
+  margin-top:5%; 
+}
+
+.emptyElement {
+  opacity: 0;
+  flex:right;
+  font-size:60rpx; 
+}
+
+.item-group {
+  height: 220rpx;
+  width: 100%;
+  display: flex;
+  border-bottom: 1rpx solid lightgray;
+}
+
+.favicon image {
+  height: 130rpx;
+  width: 130rpx;
+}
+
+.favicon text {
+  font-size: 25rpx;
+  text-align: center;
+  font-family:'Montserrat';
+}
+
+.favicon {
+  display: flex;
+  flex-basis: 1;
+  width: 33%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.questionaire {
+  display: flex;
+  flex-basis: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.q1 {
+  font-size: 20rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family:'Montserrat';
+}
+
+.q2 {
+  font-size: 20rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family:'Montserrat';
+}
+
+.q3 {
+  font-size: 20rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family:'Montserrat';
+}
+
+.status {
+  font-size: 24rpx;
+  font-family:'Montserrat';
+}

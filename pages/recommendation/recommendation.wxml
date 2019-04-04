@@ -1,0 +1,29 @@
+<wxs module="common">
+
+var substring = function (str,start,stop) {
+
+str = str.substring(start,stop)
+
+return str;
+
+}
+
+module.exports.substring = substring;
+
+</wxs>
+
+<van-dialog id="van-dialog" />
+
+<view class='nav' style='height:{{navH}}px'>
+  <van-icon class='invite' size='60rpx' bindtap='showInvition' color="{{iconColor}}" name='invition' />
+  <van-icon class='invite' size='60rpx' bindtap='logout' name="setting-o" />
+  <text class='emptyElement'>O</text>
+</view>
+
+
+<scroll-view class='module-scroll-view'>
+  <view class='emptyBlock' style='height:{{navH}}px'>
+  </view>
+  <item-group wx:for="{{list}}" wx:key="{{item._id}}" item = "{{item}}" favicon = "/image/favicon/{{item.gender}}/{{common.substring(item.questionaire.userId,23,24)}}.png" userId = "{{currentUserId}}" itemurl = "/pages/user/user?position={{item.position}}&company={{item.company}}&firstname={{item.firstName}}&lastname={{item.lastName}}&statCode={{item.invitation.stat}}&gender={{item.gender}}&q1={{item.questionaire.questions[0].answer}}&q2={{item.questionaire.questions[1].answer}}&q3={{item.questionaire.questions[2].answer}}&q4={{item.questionaire.questions[4].answer}}&q5={{item.questionaire.questions[5].answer}}&toUserId={{item.questionaire.userId}}&receiverId={{item.invitation.receiver}}&senderId={{item.invitation.sender}}&address={{item.invitation.address}}&chatTime={{item.invitation.time}}"></item-group>
+</scroll-view>
+
